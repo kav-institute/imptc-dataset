@@ -1,3 +1,5 @@
-#The IMPTC Dataset: An Infrastructural Multi-Person Trajectory and Context Dataset (2023)
+# The IMPTC Dataset: An Infrastructural Multi-Person Trajectory and Context Dataset
 
-tba...
+The Dataset will be released after the IEEE Intelligent Vehicle Conference 2023.
+
+This Site is under construction, stay tuned more to come.
