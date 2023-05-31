@@ -63,18 +63,12 @@ The following five traffic light signal types are included. In total nine traffi
 
 <a name="example"></a>
 ## Example
-
-<p align="left">
-<img src="images/sample_1_top_view_map.jpg" alt="Example Sequence" align="left" width="250"/>
-<img src="images/sample_1.png" alt="Example Sequence" align="middle" width="256"/>
-</p>
-
-work in progress - tba
+work in progress...
 
 
 <a name="download"></a>
 ## Download
-work in progress - tba
+work in progress...
 
 
 <a name="citation"></a>
