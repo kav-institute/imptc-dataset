@@ -61,27 +61,33 @@ A quick overview of all released sequences can be found here: [[IMPTC Sequence S
 #### Sample 01:
 
 !["Sample 01 VRU Tracks"](images/sample_01_vru_tracks.jpg "Sample 01 VRU Tracks") !["Sample 01"](images/sample_01.jpg "Sample 01")
+
 **Description:** A sequence with many pedestrians crossing the intersection in multiple directions. Sequence duration is 120 seconds and includes 29 VRU and 87 vehicle tracks.
 
 **Download Data:** [[click here]](https://drive.google.com/file/d/1M1ZfFsAtAlV2BmrWNCWBPb0zwV0hFw2y/view?usp=sharing)
+
 **Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/1i_-SuRKNocA5lxiMas875Jg0wlALDq1B/view?usp=sharing)
 
 ---
 #### Sample 02:
 
 !["Sample 02 VRU Tracks"](images/sample_02_vru_tracks.jpg  "Sample 02 VRU Tracks") !["Sample 02"](images/sample_02.jpg "Sample 02")
+
 **Description:** A sequence with many pedestrians and cyclists crossing the intersection in multiple directions. Sequence duration is 121 seconds and includes 31 VRU and 72 vehicle tracks.
 
 **Download Data:** [[click here]](https://drive.google.com/file/d/1ymzK-U44h9inUxJb5AEM2zM-mndQA0S5/view?usp=sharing)
+
 **Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/1QThVRhvwPUb8REpzJ2otufKxpE6szXxK/view?usp=sharing)
 
 ---
 #### Sample 03:
 
 !["Sample 03 VRU Tracks"](images/sample_03_vru_tracks.jpg  "Sample 03 VRU Tracks") !["Sample 03"](images/sample_03.jpg "Sample 03")
+
  **Description:** A sequence with a few VRUs (3 Pedestrians, 1 Cyclist and 1 E-Scooter driver) crossing the intersection. Sequence duration is 89 seconds and includes 5 VRU and 58 vehicle tracks.
 
  **Download Data:** [[click here]](https://drive.google.com/file/d/1u005DIL8YqyD6Cn2k-P4xluvvNphkWRZ/view?usp=sharing)
+ 
 **Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/1M7Kq3cD354_ip82IdoKPE1_zRB8j5DRs/view?usp=sharing)
 
 ---
@@ -226,6 +232,7 @@ sequence id
 └── vru_trackinfo.csv
 ```
 **Context files:**
+
 The context data from the weather sensors, traffic light signal logger, and GPS Timestamp synchronization are located here. The following table gives an overview: 
 
 | File | Description |
@@ -236,6 +243,7 @@ The context data from the weather sensors, traffic light signal logger, and GPS 
 
 
 **Track files:**
+
 Every single track is numbered by a unique id within the sequence. Pedestrians always start with **_ID: 000_**. Vehicles start with **_ID: 1000_**. Every tracks data is located within its own subfolder containing the track data:
 
 | File | Description |
@@ -246,6 +254,7 @@ Every single track is numbered by a unique id within the sequence. Pedestrians a
 
 
 **Additional files:**
+
 Every scene contains multiple additional supporting files for better scene understanding of whats going on and whats included within the sequence. The following table gives an overview: 
 | File | Description |
 |:----:|:-----------:|
