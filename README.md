@@ -52,7 +52,7 @@ Second set of 50  sequences will be available.
 
 ---
 ## Sequence Overview:
-A quick overview of all released sequences can be found here: [[IMPTC Sequence Summary]](https://docs.google.com/spreadsheets/d/1DnTD0kH1Js1pAnzpig57MruFz5zqqvhHPJqgNz5Q8Qo/edit?usp=sharing)
+A quick overview of all released sequences can be found here: [[IMPTC Sequence Summary]](https://docs.google.com/spreadsheets/d/1XliLCHTzBK3iBGoCy0jCPyb7eP1C2ZV45Da6Pznw524/edit?usp=sharing)
 
 ---
 <a name="samples"></a>
@@ -64,20 +64,16 @@ A quick overview of all released sequences can be found here: [[IMPTC Sequence S
 
 **Description:** A sequence with many pedestrians crossing the intersection in multiple directions. Sequence duration is 120 seconds and includes 29 VRU and 87 vehicle tracks.
 
-**Download Data:** [[click here]](https://drive.google.com/file/d/1M1ZfFsAtAlV2BmrWNCWBPb0zwV0hFw2y/view?usp=sharing)
-
-**Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/1i_-SuRKNocA5lxiMas875Jg0wlALDq1B/view?usp=sharing)
+**Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/1jc3lwiPgsW3wIY3SmN1w5ZX1icYOw7Y9/view?usp=drive_link)
 
 ---
 #### Sample 02:
 
 !["Sample 02 VRU Tracks"](images/sample_02_vru_tracks.jpg  "Sample 02 VRU Tracks") !["Sample 02"](images/sample_02.jpg "Sample 02")
 
-**Description:** A sequence with many pedestrians and cyclists crossing the intersection in multiple directions. Sequence duration is 121 seconds and includes 31 VRU and 72 vehicle tracks.
+**Description:** A sequence with many pedestrians and cyclists crossing the intersection in multiple directions. Sequence duration is 121 seconds and includes 30 VRU and 72 vehicle tracks.
 
-**Download Data:** [[click here]](https://drive.google.com/file/d/1ymzK-U44h9inUxJb5AEM2zM-mndQA0S5/view?usp=sharing)
-
-**Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/1QThVRhvwPUb8REpzJ2otufKxpE6szXxK/view?usp=sharing)
+**Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/1tAPL-fh3EjeYRfe1KNB-tAkhqm6-BDWv/view?usp=drive_link)
 
 ---
 #### Sample 03:
@@ -85,16 +81,28 @@ A quick overview of all released sequences can be found here: [[IMPTC Sequence S
 !["Sample 03 VRU Tracks"](images/sample_03_vru_tracks.jpg  "Sample 03 VRU Tracks") !["Sample 03"](images/sample_03.jpg "Sample 03")
 
  **Description:** A sequence with a few VRUs (3 Pedestrians, 1 Cyclist and 1 E-Scooter driver) crossing the intersection. Sequence duration is 89 seconds and includes 5 VRU and 58 vehicle tracks.
-
- **Download Data:** [[click here]](https://drive.google.com/file/d/1u005DIL8YqyD6Cn2k-P4xluvvNphkWRZ/view?usp=sharing)
  
-**Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/1M7Kq3cD354_ip82IdoKPE1_zRB8j5DRs/view?usp=sharing)
+**Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/1qIMXhGBaHWhmhBaK2nkHXb8eYAriO808/view?usp=drive_link)
+
+---
+#### Sample 04:
+
+!["Sample 04 VRU Tracks"](images/sample_04_vru_tracks.jpg  "Sample 04 VRU Tracks") !["Sample 04"](images/sample_04.jpg "Sample 04")
+
+ **Description:** A sequence with many VRUs crossing the intersection. Sequence duration is 109 seconds and includes 17 VRU and 73 vehicle tracks.
+ 
+**Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/17oRJvW1As7Zd_chlBKH4qi9OOebaAK5m/view?usp=drive_link)
 
 ---
 <a name="download"></a>
 ## Download:
-All packages are split into compressed 1GB chunks.
+All packages are split into compressed tarball chunks of 1GB.
 
+###### Download Sample Data:
+ Download the sample data: [[click here]](https://drive.google.com/file/d/1vLjuHa2hsJEODjTz7StUylNg2zDMdphR/view?usp=drive_link)
+
+
+###### Download Dataset:
 Coming soon!
 
 | Sequences | Download Link | Status    | Size   |
@@ -135,6 +143,23 @@ A detailed description of the vru and vehicle data formats can be found here: [[
 - GPS Timestamp data synchronisation
 - Overview video 
 ```
+
+#### Coordinate System:
+The dataset uses its own 3D world coordinate system. All tracks refer to this coordinate system and use meter (m) as unit. The local used coordinate system can be converted to global UTM (Zone 32) by applying the following shift:
+
+```
+# Conversion to UTM (Zone 32)
+|       |     X     |     Y      |   Z    |
+| local |    0.0    |     0.0    |   0.0  |
+| gobal | 511570.38 | 5535358.32 | 150.22 |
+```
+
+Its origin position is located at one of the four sidewalk egdes and marked on the topview map by a small red dot with a green and blue line. The lines indicate the X- and Y- axes, with the blue line representing the X-axis pointing towards eastern direction and the green line representing the Y-axis pointing towards northern direction. The Z-axis, in red, points towards the sky, with ground level representing zero height. The following image illustrates location and directions.
+
+!["Coordinate system and origin"](images/coord_origin.jpg  "Coordinate system and origin")
+
+###### Altitude gradient:
+The complete intersection area has a steady altitude gradient of 4-5%. In some cases this can affect height measurements.
 
 #### Ground Classification:
 The following seven different ground types are included within the intersection area.

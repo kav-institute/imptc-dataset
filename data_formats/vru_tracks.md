@@ -39,7 +39,7 @@
     },
     "track_data": 
     {
-        "0": 
+        "ts_0": 
         {
             "ts": val (int)
             "status": val (int)
@@ -50,11 +50,11 @@
             "z_offset": val (float)
             "source_type": val (int)
         },
-        "1":
+        "ts_1":
         {
             ...
         },
-        "2":
+        "ts_2":
         {
             ...
         }

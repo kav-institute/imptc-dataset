@@ -30,7 +30,7 @@
     },
     "status_data": 
     {
-        "ts": 
+        "ts:0": 
         {
             "k1": val (int)
             "k2": val (int)
@@ -45,11 +45,11 @@
             "b2": val (int)
             "b3": val (int)
         },
-        "ts":
+        "ts_1":
         {
             ...
         },
-        "ts":
+        "ts_2":
         {
             ...
         }

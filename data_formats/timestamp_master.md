@@ -10,19 +10,17 @@
 ---
 ```
 {
-    "ts": 
+    "ts_0": 
     {
         "id": val (int)
         "weather_data": val (bool)
         "traffic_lights_data": val (bool)
-
     },
-    "ts": 
+    "ts_1": 
     {
         "id": val (int)
         "weather_data": val (bool)
         "traffic_lights_data": val (bool)
-
     },
     ...
 }

@@ -20,7 +20,7 @@
  - _relative_humidity_ : Humidity in percent from 0% till 100%
  - _wind_speed_ :  Wind speed in (m/s)
  - _wind_direction_ : Wind direction in degree (°)
- - _precipitation_intensity_ : Percipitation Intensity in 
+ - _precipitation_intensity_ : Percipitation Intensity 
  - _precipitation_amount_ : Percipitation type, 0 => None, 1 => Rain, 2 => Snow  
  - _visibility_ : Overall visibility from 0 till 2000 meters in (m)
  - _weather_nws_ : not relevant
@@ -38,7 +38,7 @@
     },
     "weather_data": 
     {
-        "ts": 
+        "ts_0": 
         {
             "air_pressure": val (float)
             "air_temperature": val (float)
@@ -50,11 +50,11 @@
             "visibility": val (float)
             "weather_nws": val (int)
         },
-        "ts":
+        "ts_1":
         {
             ...
         },
-        "ts":
+        "ts_2":
         {
             ...
         }

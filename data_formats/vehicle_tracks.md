@@ -33,7 +33,7 @@
     },
     "track_data": 
     {
-        "0": 
+        "ts_0": 
         {
             "ts": val (int)
             "cuboid": list [[[x, y, z], [x, y, z]], [[x, y, z], [x, y, z]], ...] (float)
@@ -43,11 +43,11 @@
             "ground_type": val (int)
             "z_offset": val (float)
         },
-        "1":
+        "ts_1":
         {
             ...
         },
-        "2":
+        "ts_2":
         {
             ...
         }
