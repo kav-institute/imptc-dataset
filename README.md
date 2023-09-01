@@ -96,22 +96,21 @@ A quick overview of all released sequences can be found here: [[IMPTC Sequence S
 ---
 <a name="download"></a>
 ## Download:
-All packages are split into compressed tarball chunks of 1GB.
+The dataset is splitted into data chuncks of 50 Sequences.
 
 ###### Download Sample Data:
  Download the sample data: [[click here]](https://drive.google.com/file/d/1vLjuHa2hsJEODjTz7StUylNg2zDMdphR/view?usp=drive_link)
 
 
 ###### Download Dataset:
-Coming soon!
 
 | Sequences | Download Link | Status    | Size   |
 |:---------:|:-------------:|:---------:|:------:|
-| 1-50      | ...           | `offline` |  0 GB  |
-| 51-100    | ...           | `offline` |  0 GB  |
-| 101-150   | ...           | `offline` |  0 GB  |
-| 151-200   | ...           | `offline` |  0 GB  |
-| 201-250   | ...           | `offline` |  0 GB  |
+| 1-50      | [[Set_01]](https://drive.google.com/file/d/1zEKz_j6qy4qiC_nvC4xyInP8rDOC1hW9/view?usp=sharing)           | <span style="color:green">*Online*</span> |  2.5 GB  |
+| 51-100    | ...           | <span style="color:gray">*Offline*</span> |  0.0 GB  |
+| 101-150   | ...           | <span style="color:gray">*Offline*</span> |  0.0 GB  |
+| 151-200   | ...           | <span style="color:gray">*Offline*</span> |  0.0 GB  |
+| 201-250   | ...           | <span style="color:gray">*Offline*</span> |  0.0 GB  |
 
 ---
 <a name="dataset"></a>

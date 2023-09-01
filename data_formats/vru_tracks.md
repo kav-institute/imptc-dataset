@@ -3,15 +3,15 @@
 ---
 **Class ids:**
 
-| Class ID | Class name |
-|:--------:|:----------:|
-|     0    | Pedestrian |
-|     2    | Bicycle    |
-|     3    | Motorcycle |
-|     4    | Scooter    |
-|     5    | Stroller   |
-|     6    | Wheelchair |
-|     10   | Unknown    |
+| Class ID | Class name | Color |
+|:--------:|:----------:|:-----:|
+|     0    | Pedestrian |  red  |
+|     2    | Bicycle    | blue  |
+|     3    | Motorcycle | green |
+|     4    | Scooter    | gold  |
+|     5    | Stroller   | pink  |
+|     6    | Wheelchair | lime  |
+|     10   | Unknown    | gray  |
 
 ---
 **Track data:**

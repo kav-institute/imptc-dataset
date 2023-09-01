@@ -3,10 +3,10 @@
 ---
 **Class ids:**
 
-| Class ID | Class name |
-|:--------:|:----------:|
-|     7    | Car        |
-|     8    | Truck/Bus  |
+| Class ID | Class name | color  |
+|:--------:|:----------:|:------:|
+|     7    | Car        | brown  |
+|     8    | Truck/Bus  | orange |
 
 ---
 **Track data:**
