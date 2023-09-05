@@ -47,6 +47,9 @@ Sample sequences are available.
 ##### 31. August 2023:
 First set of 50 sequences is available.
 
+##### 05. September 2023:
+Second set of 50 sequences is available.
+
 ---
 ## Sequence Overview:
 A quick overview of all released sequences can be found here: [[IMPTC Sequence Summary]](https://docs.google.com/spreadsheets/d/1XliLCHTzBK3iBGoCy0jCPyb7eP1C2ZV45Da6Pznw524/edit?usp=sharing)
@@ -104,7 +107,7 @@ The dataset is splitted into data chuncks of 50 Sequences.
 | Sequences | Download Link | Status    | Size   |
 |:---------:|:-------------:|:---------:|:------:|
 | 1-50      | [[Set_01]](https://drive.google.com/file/d/1zEKz_j6qy4qiC_nvC4xyInP8rDOC1hW9/view?usp=sharing)           | $${\color{green}Online}$$ |  2.5 GB  |
-| 51-100    | ...           | $${\color{red}tba}$$ |  0.0 GB  |
+| 51-100    | [[Set_02]](https://drive.google.com/file/d/12JxIdU5B6HDy5fB6tenvY38dH_AuPIgj/view?usp=sharing)           | $${\color{green}Online}$$ |  2.3 GB  |
 | 101-150   | ...           | $${\color{red}tba}$$  |  0.0 GB  |
 | 151-200   | ...           | $${\color{red}tba}$$  |  0.0 GB  |
 | 201-250   | ...           | $${\color{red}tba}$$  |  0.0 GB  |
