@@ -39,10 +39,10 @@ If you use our dataset, please cite:
 
 This repository contains all information for the IMPTC Dataset, including data specifications, overviews, sample data, and download links. Two different types provide the data:
 
-#####Sequence focused 
+##### Sequence focused 
 The data is split into single, fully synchronized, independent, and unaffected sequences. The sequences are recorded on everyday public road traffic at different times, seasons, and weather conditions using a combination of LiDAR and camera sensors operating at 25 Hz. The dataset provides high-quality VRU and vehicle trajectories and additional context information like weather data, traffic light signal status, a segmentation map, a sequence overview video, and more. The sequence-focused data consists of 270 sequences, including 2700+ VRU trajectories with an average duration of 32 seconds and 14600+ vehicle trajectories.
 
-#####Trajectory focused
+##### Trajectory focused
 The trajectory-only dataset consists of the classical train, eval, and test split. The train set contains 2312, the eval set has 411 trajectories, and the test set has 838 trajectories. Train and eval sets are extracted from the 270 above-described sequences. A separate test set is extracted from closed, non-publically released sequences.
 
 ---
@@ -295,7 +295,7 @@ Each trajectory within a set is stored within a separate subfolder defined by th
 ```
 
 ---
-####Context files
+#### Context files
 
 The context data from the weather sensors, traffic light signal logger, and GPS Timestamp synchronization are located here. The following table gives an overview: 
 
@@ -306,7 +306,7 @@ The context data from the weather sensors, traffic light signal logger, and GPS 
 | weather_data.json | Weather sensor data |
 
 ---
-####Track files
+#### Track files
 
 Every single track is numbered by a unique id within the sequence. VRUs always start with **_ID: 000_**. Vehicles start with **_ID: 1000_**. Every track data is located within its own subfolder containing the track data:
 
@@ -317,7 +317,7 @@ Every single track is numbered by a unique id within the sequence. VRUs always s
 | summary.png | Plot with visualization of track data like velocity and more|
 
 ---
-####Additional files
+#### Additional files
 
 Every scene contains additional supporting files to understand better what is going on and what is included within the sequence. The following table gives an overview: 
 
