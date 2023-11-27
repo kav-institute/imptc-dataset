@@ -35,117 +35,67 @@ If you use our dataset, please cite:
 
 ---
 <a name="overview"></a>
-## Overview:
+### Overview
 
-This repository contains all information for the IMPTC Dataset inlcuding data specifications, overviews, sample data and download links. The data availability is a continous process for the rest of the year 2023. New sequences will be added every month, starting with the first batch at the end of august 2023. Therefore this site will be updated regularly. The data is provided in a per sequence style (including context and synchronization) or in a classical trajectory focused style (only vru trajectories, with defined seperate train, eval and test splits).
-In order to achieve a consistent data basis and comparability, the first 250 sequences will be standardized as version 1.0.
+This repository contains all information for the IMPTC Dataset, including data specifications, overviews, sample data, and download links. Two different types provide the data:
 
----
-#### Release Schedule:
-##### 08. August 2023:
-Sample sequences are available. 
+#####Sequence focused 
+The data is split into single, fully synchronized, independent, and unaffected sequences. The sequences are recorded on everyday public road traffic at different times, seasons, and weather conditions using a combination of LiDAR and camera sensors operating at 25 Hz. The dataset provides high-quality VRU and vehicle trajectories and additional context information like weather data, traffic light signal status, a segmentation map, a sequence overview video, and more. The sequence-focused data consists of 270 sequences, including 2700+ VRU trajectories with an average duration of 32 seconds and 14600+ vehicle trajectories.
 
-##### 31. August 2023:
-First set of 50 sequences is available.
-
-##### 05. September 2023:
-Second set of 50 sequences is available.
-
-##### 14. September 2023:
-Third set of 50 sequences is available.
-
-##### 26. Oktober 2023:
-Fourth set of 50 sequences is available.
-
-##### 03. November 2023:
-An additional data representation in the classical trajectory focused style is available (only vru trajectories, with defined seperate train, eval and test splits).
-**Note:** train_set_05 and eval_set are currently missing and will be added later!
+#####Trajectory focused
+The trajectory-only dataset consists of the classical train, eval, and test split. The train set contains 2312, the eval set has 411 trajectories, and the test set has 838 trajectories. Train and eval sets are extracted from the 270 above-described sequences. A separate test set is extracted from closed, non-publically released sequences.
 
 ---
-## Sequence Overview:
+### Sequence Overview
 A quick overview of all released sequences can be found here: [[IMPTC Sequence Summary]](https://docs.google.com/spreadsheets/d/1XliLCHTzBK3iBGoCy0jCPyb7eP1C2ZV45Da6Pznw524/edit?usp=sharing)
 
 ---
 <a name="samples"></a>
-## Samples:
-
-#### Sample 01:
-
-!["Sample 01 VRU Tracks"](images/sample_01_vru_tracks.jpg "Sample 01 VRU Tracks") !["Sample 01"](images/sample_01.jpg "Sample 01")
-
-**Description:** A sequence with many pedestrians crossing the intersection in multiple directions. Sequence duration is 120 seconds and includes 29 VRU and 87 vehicle tracks.
-
-**Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/1jc3lwiPgsW3wIY3SmN1w5ZX1icYOw7Y9/view?usp=drive_link)
-
----
-#### Sample 02:
-
-!["Sample 02 VRU Tracks"](images/sample_02_vru_tracks.jpg  "Sample 02 VRU Tracks") !["Sample 02"](images/sample_02.jpg "Sample 02")
-
-**Description:** A sequence with many pedestrians and cyclists crossing the intersection in multiple directions. Sequence duration is 121 seconds and includes 30 VRU and 72 vehicle tracks.
+### Samples
+The sample package consists of four complete sequences. A demo video of one of the four sample sequences can be found below. The samples can be downloaded here:
 
 **Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/1tAPL-fh3EjeYRfe1KNB-tAkhqm6-BDWv/view?usp=drive_link)
 
----
-#### Sample 03:
+| Sample Data | [Download](https://drive.google.com/file/d/1UvcO5jPRRsbtriFRB1HlZpPtxRqjOM66/view?usp=sharing) | $${\color{green}Online}$$    | 0.3 GB   |
+|:---------:|:-------------:|:---------:|:------:|
 
-!["Sample 03 VRU Tracks"](images/sample_03_vru_tracks.jpg  "Sample 03 VRU Tracks") !["Sample 03"](images/sample_03.jpg "Sample 03")
+**Description:** A sequence with many pedestrians and cyclists crossing the intersection in multiple directions. Sequence duration is 121 seconds and includes 30 VRU and 72 vehicle tracks.
+!["Sample 02 VRU Tracks"](images/sample_02_vru_tracks.jpg  "Sample 02 VRU Tracks") !["Sample 02"](images/sample_02.jpg "Sample 02")
 
- **Description:** A sequence with a few VRUs (3 Pedestrians, 1 Cyclist and 1 E-Scooter driver) crossing the intersection. Sequence duration is 89 seconds and includes 5 VRU and 58 vehicle tracks.
- 
-**Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/1qIMXhGBaHWhmhBaK2nkHXb8eYAriO808/view?usp=drive_link)
-
----
-#### Sample 04:
-
-!["Sample 04 VRU Tracks"](images/sample_04_vru_tracks.jpg  "Sample 04 VRU Tracks") !["Sample 04"](images/sample_04.jpg "Sample 04")
-
- **Description:** A sequence with many VRUs crossing the intersection. Sequence duration is 109 seconds and includes 17 VRU and 73 vehicle tracks.
- 
-**Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/17oRJvW1As7Zd_chlBKH4qi9OOebaAK5m/view?usp=drive_link)
 
 ---
 <a name="download"></a>
-## Download:
-#### Sample Data: 
-Four sample sequences are available. Descriptions and demo videos can be found above. The samples can be downloaded here:
-
-| Sample Data | [Download](https://drive.google.com/file/d/1vLjuHa2hsJEODjTz7StUylNg2zDMdphR/view?usp=drive_link) | $${\color{green}Online}$$    | 0.3 GB   |
-|:---------:|:-------------:|:---------:|:------:|
-
-```
-```
-
-#### Full Dataset:
-The full dataset is splitted into five chuncks of 50 sequences each. It containes all data, synchronized by reference timestamps. The data strucutre is explained in the chapter 'Data Structure'. The chunks can be downloaded here:
+## Downloads
+#### Full Sequence Dataset
+The full sequenced dataset is split into five chunks of 50+ sequences each. It contains all data synchronized by reference timestamps. The data structure is explained in the chapter 'Data Structure'. The chunks can be downloaded here:
 
 | Sequences | Download Link | Status    | Size   |
 |:---------:|:-------------:|:---------:|:------:|
-| 1-50      | [[Set_01]](https://drive.google.com/file/d/1HY0PkAwEnBLZRL1_-m4tZtezJxW2Pu5Y/view?usp=sharing)           | $${\color{green}Online}$$ |  2.5 GB  |
-| 51-100    | [[Set_02]](https://drive.google.com/file/d/1Uvms0DD5SUiGKAVgz6WQZWCwCnaOdUBd/view?usp=sharing)           | $${\color{green}Online}$$ |  2.3 GB  |
-| 101-150   | [[Set_03]](https://drive.google.com/file/d/1NCZUqW2fK_KbSXm5WmqVzJTUZ0MpaTfB/view?usp=sharing)           | $${\color{green}Online}$$ |  2.7 GB  |
-| 151-200   | [[Set_04]](https://drive.google.com/file/d/1THOMJfNVc-60puyo2K1wPPZTaUzna-qL/view?usp=sharing)           | $${\color{green}Online}$$ |  3.3 GB  |
-| 201-250   | [[Set_05]]()           | $${\color{red}tba}$$  |  0.0 GB  |
+| 00-49      | [[Set_01]](https://drive.google.com/file/d/1HY0PkAwEnBLZRL1_-m4tZtezJxW2Pu5Y/view?usp=sharing)           | $${\color{green}Online}$$ |  2.5 GB  |
+| 50-99     | [[Set_02]](https://drive.google.com/file/d/1Uvms0DD5SUiGKAVgz6WQZWCwCnaOdUBd/view?usp=sharing)           | $${\color{green}Online}$$ |  2.3 GB  |
+| 100-149   | [[Set_03]](https://drive.google.com/file/d/1NCZUqW2fK_KbSXm5WmqVzJTUZ0MpaTfB/view?usp=sharing)           | $${\color{green}Online}$$ |  2.7 GB  |
+| 150-199   | [[Set_04]](https://drive.google.com/file/d/1THOMJfNVc-60puyo2K1wPPZTaUzna-qL/view?usp=sharing)           | $${\color{green}Online}$$ |  3.3 GB  |
+| 200-269   | [[Set_05]](https://drive.google.com/file/d/1dji-KepI_AOYteRNAh7AzUb3XDWAUgPn/view?usp=sharing)           | $${\color{green}Online}$$ |  4.8 GB  |
 
-```
-```
 
-#### VRU Trajectory Data:
-The VRU trajectory data can be downloaded separatly for itself. The above mentioned five dataset chuncks represent the train batches. In addition a seperate evaluation and a test set are included. The VRU trajectory data can be downloaded here:
+#### VRU Trajectory Dataset
+The VRU trajectory data, split into train, eval, and test, can be downloaded here:
 
-| VRU Trajectory Data | [Download](https://drive.google.com/file/d/1LyWpQaAQCAiOdFmx1C2FYSp3idsLcSkh/view?usp=sharing) | $${\color{green}Online}$$    | 1.4 GB   |
+| VRU Trajectory Dataset | [Download](https://drive.google.com/file/d/1uzm_lZ0QaqaARheV5j1D30pIlLyu8JKj/view?usp=sharing) | $${\color{green}Online}$$    | 1.9 GB   |
 |:---------:|:-------------:|:---------:|:------:|
 
 ---
 
 <a name="dataset"></a>
-## The Dataset:
-The dataset consists of 250 unaffected sequences recorded on everyday public road traffic. The sequences are recorded at different daytimes, seasons and weather conditions using a combination of LiDAR and camera sensors. The dataset provides high quality VRU and vehicle trajectories as well as additional context information like weather data, traffic light signal status, a segmentation map, a sequence overview video and more. The data is provided in a per sequence style (including context and synchronization) or in a classical trajectory focused style (only vru trajectories, with defined seperate train, eval and test splits).
+### The Dataset
+The dataset consists of 270 unaffected sequences recorded on everyday public road traffic. The sequences are recorded at different times of the day, seasons, and weather conditions using a combination of LiDAR and camera sensors operating at 25 Hz. The dataset provides high-quality VRU and vehicle trajectories and additional context information like weather data, traffic light signal status, a segmentation map, a sequence overview video, and more.
 
-#### Object types:
-A detailed description of the vru and vehicle data formats can be found here: [[vru specification]](data_formats/vru_tracks.md), [[vehicle specification]](data_formats/vehicle_tracks.md). In total the dataset covers nine different classes of road users listed below:
+
+#### Object types
+A detailed description of the vru and vehicle data formats can be found here: [[vru specification]](data_formats/vru_tracks.md), [[vehicle specification]](data_formats/vehicle_tracks.md). In total, the dataset covers nine different classes of road users listed below:
 
 ```md
+### Object types:
 - Pedestrian
 - Cyclist
 - Motorcyclist
@@ -156,10 +106,23 @@ A detailed description of the vru and vehicle data formats can be found here: [[
 - Truck
 - Unknown object
 ```
+The total amount of each object class is listed below:
 
-#### Context types:
+| VRU class | Number of tracks | Vehicle class | Number of tracks |
+|:----:|:-----------:|:----:|:-----------:|
+| pedestrian | 1920 | car | 14190 |
+| cyclist | 503 | truck/bus | 447 |
+| motorcycle | 203 |
+| scooter | 80 |
+| stroller | 17 |
+| wheelchair | 0 |
+| **Total** | **2723** | | **14637** |
+
+---
+#### Context types
 
 ```md
+### Context types:
 - Weather data
 - Traffic light signal status
 - Ground classification / Segmentation map
@@ -168,29 +131,32 @@ A detailed description of the vru and vehicle data formats can be found here: [[
 - Overview video 
 ```
 
-#### Coordinate System:
-The dataset uses its own 3D world coordinate system. All tracks refer to this coordinate system and use meter (m) as unit. The local used coordinate system can be converted to global UTM (Zone 32) by applying the following shift:
+---
+#### Coordinate System
+The dataset uses its own 3D world coordinate system. All tracks refer to this coordinate system and use the meter (m) as a unit. The locally used coordinate system can be converted to global UTM (Zone 32) by applying the following shift:
 
 ```
-# Conversion to UTM (Zone 32)
+### Conversion to UTM (Zone 32)
 |       |     X     |     Y      |   Z    |
 | local |    0.0    |     0.0    |   0.0  |
 | gobal | 511570.38 | 5535358.32 | 150.22 |
 ```
 
-Its origin position is located at one of the four sidewalk egdes and marked on the topview map by a small red dot with a green and blue line. The lines indicate the X- and Y- axes, with the blue line representing the X-axis pointing towards eastern direction and the green line representing the Y-axis pointing towards northern direction. The Z-axis, in red, points towards the sky, with ground level representing zero height. The following image illustrates location and directions.
+Its origin position is located at one of the four sidewalk edges and marked on the top view map by a small red dot with a green and blue line. The lines indicate the X- and Y-axis, with the blue line representing the X-axis pointing towards the eastern direction and the green line representing the Y-axis pointing towards the northern direction. The Z-axis, in red, points towards the sky, with ground level representing zero height. The following image illustrates the location and directions.
 
 !["Coordinate system and origin"](images/coord_origin.jpg  "Coordinate system and origin")
 
-###### Altitude gradient:
-The complete intersection area has a steady altitude gradient of 4-5%. In some cases this can affect height measurements.
+###### Altitude gradient
+The complete intersection area has a steady altitude gradient of 4-5%. In some cases, this can affect height measurements.
 
-#### Ground Classification / Segmentation Map:
+---
+#### Ground Classification / Segmentation Map
 The following eight different ground types are included within the intersection area. A detailed description of the data format can be found here: [[segmentation map specification]](data_formats/ground_plane.md). 
 
 **The map can be downloaded here:** [[Segmentation Map]](https://drive.google.com/file/d/1uPcvJv-etmImUCoVugBAJUJmFrLcd5kR/view?usp=sharing)
 
 ```md
+### Ground segmentation types
 - Road
 - Sidewalk
 - Crosswalk
@@ -203,21 +169,23 @@ The following eight different ground types are included within the intersection 
 
 !["Coordinate system and origin"](data_formats/ground_plane.png  "Coordinate system and origin")
 
-#### Timestamp Master:
+---
+#### Timestamp Master
 A detailed description of the data format can be found here: [[timestamp specification]](data_formats/timestamp_master.md). This file includes all GPS timestamps within the sequence for data synchronization. All context and track data are derived from this master. The system operates at a frequency of 25 Hz.
 
-#### Weather Data:
-A detailed description of the data format can be found here: [[weather data specification]](data_formats/weather_data.md). The data refreshing rate is one new data per 10 seconds (0.1 Hz). In total five weather classes and six weather describing parameters are included and listed below:
+---
+#### Weather Data
+A detailed description of the data format can be found here: [[weather data specification]](data_formats/weather_data.md). The data refreshing rate is one new data per 10 seconds (0.1 Hz). In total, five weather classes and six weather describing parameters are included and listed below:
 
 ```md
-# Classes:
+### Classes:
 - Sunny/Cloudy
 - Light rainfall
 - Strong rainfall
 - Snowy
 - Foggy 
 
-# Parameters:
+### Parameters:
 - Temperatur
 - Precipitation Type
 - Precipitation Amount
@@ -226,11 +194,12 @@ A detailed description of the data format can be found here: [[weather data spec
 - Visibility
 ```
 
-#### Traffic Light Signal Data:
-A detailed description of the data format can be found here: [[traffic light specification]](data_formats/traffic_light_data.md). The data refreshing rate is 1 Hz. In total nine traffic light signal groups are tracked and represented by the following six different light states:
+---
+#### Traffic Light Signal Data
+A detailed description of the data format can be found here: [[traffic light specification]](data_formats/traffic_light_data.md). The data refreshing rate is 1 Hz. In total, nine traffic light signal groups are tracked and represented by the following six different light states:
 
 ```md
-# Light states:
+### Light states:
 - Off
 - Red
 - Red-yellow
@@ -239,15 +208,16 @@ A detailed description of the data format can be found here: [[traffic light spe
 - Yellow-Blinking
 ```
 
-##### Signal groups:
-The nine signal groups are illustrated below. The groups k1 till k6 represent the different vehicle lanes and driving directions. The groups f1 till f3 represent the three signalized pedestrians crossings.
+##### Signal groups
+The nine signal groups are illustrated below. The groups k1 till k6 represent the different vehicle lanes and driving directions. The groups f1 till f3 represent the three signalized pedestrian crossings.
 
 !["Traffic light signal groups"](images/traffic_light_signal_groups.jpg  "Traffic light signal groups")
 
 ---
 <a name="data_structure"></a>
-## Data Structure:
-**The data structure for a sequence** is always the same and is described by the following scemantic overview:
+### Data Structure
+#### For a sequence
+The data structure for a sequence is always the same and is described by the following schematic overview:
 
 ```md
 sequence id
@@ -286,12 +256,12 @@ sequence id
 └── vru_trackinfo.csv
 ```
 
-**The data structure for the only vru trajectory data path** is always the same. Each trajectory within a set is stored within a seperate subfolder defined by the trajectories id. It containes the singles track data and an overview topview image for visualization. In addition all trajectories of a set are combined within the xy_set_tracks.json file for easy loading.
-
- and is described by the following scemantic overview:
+---
+#### VRU trajectory data:
+Each trajectory within a set is stored within a separate subfolder defined by the trajectories ID. It contains the singles track data and an overview top view image for visualization. In addition, all trajectories of a set are combined within the train/eval/test_tracks.json file for easy loading.
 
 ```md
-├── test_set
+├── test
 │   ├── 0000
 │       ├── 0000_topview.png
 │       ├── track.json
@@ -304,32 +274,41 @@ sequence id
 │       ├── ...
 │       ├── ...
 │       ├── ...
-│   ├── test_set_tracks.json
-│   ├── test_set_tracks.jpg
-│   ├── test_set_overview.csv
 │
-├── eval_set
-├── train_set_01
-├── train_set_02
-├── train_set_03
-├── train_set_04
-├── train_set_05
+├── eval
+│   ├── 0000
+│   ├── ...
+│
+├── train
+│   ├── 0000
+│   ├── ...
+│
+├── test_tracks.json
+├── test_tracks.jpg
+├── test_overview.csv
+├── eval_tracks.json
+├── eval_tracks.jpg
+├── eval_overview.csv
+├── train_tracks.json
+├── train_tracks.jpg
+├── train_overview.csv
 ```
 
-**Context files:**
+---
+####Context files
 
 The context data from the weather sensors, traffic light signal logger, and GPS Timestamp synchronization are located here. The following table gives an overview: 
 
 | File | Description |
 |:----:|:-----------:|
-| track.json | Track data|
-| topview.png | Topview visualization of the tracks movement |
-| summary.png | Plot with visualization of track data like velocity and more|
+| master_timestamp_sync.json | Master timestamp data for sequence data synchonization |
+| traffic_light_signals.json | Traffic light signal status data |
+| weather_data.json | Weather sensor data |
 
+---
+####Track files
 
-**Track files:**
-
-Every single track is numbered by a unique id within the sequence. VRUs always start with **_ID: 000_**. Vehicles start with **_ID: 1000_**. Every tracks data is located within its own subfolder containing the track data:
+Every single track is numbered by a unique id within the sequence. VRUs always start with **_ID: 000_**. Vehicles start with **_ID: 1000_**. Every track data is located within its own subfolder containing the track data:
 
 | File | Description |
 |:----:|:-----------:|
@@ -337,10 +316,11 @@ Every single track is numbered by a unique id within the sequence. VRUs always s
 | topview.png | Topview visualization of the tracks movement |
 | summary.png | Plot with visualization of track data like velocity and more|
 
+---
+####Additional files
 
-**Additional files:**
+Every scene contains additional supporting files to understand better what is going on and what is included within the sequence. The following table gives an overview: 
 
-Every scene contains multiple additional supporting files for better scene understanding of whats going on and whats included within the sequence. The following table gives an overview: 
 | File | Description |
 |:----:|:-----------:|
 | overview.csv | Lists the total number of included tracks and subclasses |
