@@ -37,13 +37,13 @@ If you use our dataset, please cite:
 <a name="overview"></a>
 ### Overview
 
-This repository contains all information for the IMPTC Dataset, including data specifications, overviews, sample data, and download links. Two different types provide the data:
+This repository contains all information for the IMPTC Dataset, including data specifications, overviews, sample data, and download links. The dataset consists of two different subtypes with different research targets. The sequence focused dataset targets scene understanding and interaction/social-based trajectory forecasting topics. The VRU trajectory focused dataset targets classical single VRU trajectory forecasting research.
 
 ##### Sequence focused 
 The data is split into single, fully synchronized, independent, and unaffected sequences. The sequences are recorded on everyday public road traffic at different times, seasons, and weather conditions using a combination of LiDAR and camera sensors operating at 25 Hz. The dataset provides high-quality VRU and vehicle trajectories and additional context information like weather data, traffic light signal status, a segmentation map, a sequence overview video, and more. The sequence-focused data consists of 270 sequences, including 2700+ VRU trajectories with an average duration of 32 seconds and 14600+ vehicle trajectories.
 
-##### Trajectory focused
-The trajectory-only dataset consists of the classical train, eval, and test split. The train set contains 2312, the eval set has 411 trajectories, and the test set has 838 trajectories. Train and eval sets are extracted from the 270 above-described sequences. A separate test set is extracted from closed, non-publically released sequences.
+##### VRU Trajectory focused
+The trajectory-only dataset consists of the classical train, eval, and test split. The dataset consists of 5133 VRU trajectories splitted into: 3585 train, 400 eval, and 1148 test trajectories. Train and eval sets are extracted from the 270 above-described sequences and from a additional set of non-publically released data. The separate test set is extracted from closed, non-publically released sequences.
 
 ---
 ### Sequence Overview
@@ -81,42 +81,50 @@ The full sequenced dataset is split into five chunks of 50+ sequences each. It c
 #### VRU Trajectory Dataset
 The VRU trajectory data, split into train, eval, and test, can be downloaded here:
 
-| VRU Trajectory Dataset | [Download](https://drive.google.com/file/d/1uzm_lZ0QaqaARheV5j1D30pIlLyu8JKj/view?usp=sharing) | $${\color{green}Online}$$    | 1.9 GB   |
+| VRU Trajectory Dataset | [Download](https://drive.google.com/file/d/19co_aq7UT7lWMZjoK5si5rY_HC2MFZea/view?usp=sharing) | $${\color{green}Online}$$    | 2.7 GB   |
 |:---------:|:-------------:|:---------:|:------:|
 
 ---
 
 <a name="dataset"></a>
-### The Dataset
+### The VRU Trajectory Dataset
+
+Train and eval sets are extracted from the 270 released sequences and from a additional set of non-publically released data. The separate test set is extracted from closed, non-publically released sequences.
+
+
+| VRU class | Train | Eval | Test |
+|:----:|:-----------:|:----:|:-----------:|
+| pedestrian | 2628 | 310 | 843 |
+| cyclist | 617 | 58 | 179 |
+| motorcycle | 233 | 22 | 103 |
+| scooter | 85 | 9 | 14 |
+| stroller | 22 | 1 | 9 |
+| wheelchair | 0 | 0 | 0|
+| **Total** | **3585** | **400** | **1148** |
+
+### The Sequence Dataset
 The dataset consists of 270 unaffected sequences recorded on everyday public road traffic. The sequences are recorded at different times of the day, seasons, and weather conditions using a combination of LiDAR and camera sensors operating at 25 Hz. The dataset provides high-quality VRU and vehicle trajectories and additional context information like weather data, traffic light signal status, a segmentation map, a sequence overview video, and more.
 
 
 #### Object types
-A detailed description of the vru and vehicle data formats can be found here: [[vru specification]](data_formats/vru_tracks.md), [[vehicle specification]](data_formats/vehicle_tracks.md). In total, the dataset covers nine different classes of road users listed below:
+A detailed description of the vru and vehicle data formats can be found here: [[vru specification]](data_formats/vru_tracks.md), [[vehicle specification]](data_formats/vehicle_tracks.md). In total, the dataset covers eight different classes of road users. The total amount of each object class is listed below:
 
-```md
-### Object types:
-- Pedestrian
-- Cyclist
-- Motorcyclist
-- (E)-Scooter driver
-- Wheelchair driver
-- Pedestrian with stroller
-- Car
-- Truck
-- Unknown object
-```
-The total amount of each object class is listed below:
-
-| VRU class | Number of tracks | Vehicle class | Number of tracks |
-|:----:|:-----------:|:----:|:-----------:|
-| pedestrian | 1920 | car | 14190 |
-| cyclist | 503 | truck/bus | 447 |
+| VRU class | Number of tracks |
+|:----:|:-----------:|
+| pedestrian | 1920 |
+| cyclist | 503 |
 | motorcycle | 203 |
 | scooter | 80 |
 | stroller | 17 |
 | wheelchair | 0 |
-| **Total** | **2723** | | **14637** |
+| **Total** | **2723** |
+
+
+| Vehicle class | Number of tracks |
+|:----:|:-----------:|
+| truck/bus | 447 |
+| car | 14190 |
+| **Total** | **14637** |
 
 ---
 #### Context types
