@@ -60,6 +60,7 @@ The sample package consists of four complete sequences. A demo video of one of t
 |:---------:|:-------------:|:---------:|:------:|
 
 **Description:** A sequence with many pedestrians and cyclists crossing the intersection in multiple directions. Sequence duration is 121 seconds and includes 30 VRU and 72 vehicle tracks.
+
 !["Sample 02 VRU Tracks"](images/sample_02_vru_tracks.jpg  "Sample 02 VRU Tracks") !["Sample 02"](images/sample_02.jpg "Sample 02")
 
 
