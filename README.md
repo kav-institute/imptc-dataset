@@ -344,3 +344,10 @@ Every scene contains additional supporting files to understand better what is go
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details
 
 ---
+
+## Contributors
+
+<a href="https://github.com/kav-institute/imptc-dataset/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kav-institute/imptc-dataset" />
+</a>
+
