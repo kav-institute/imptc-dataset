@@ -1,4 +1,4 @@
-### The IMPTC Dataset: An Infrastructural Multi-Person Trajectory and Context Dataset
+### The IMPTC Dataset: An Infrastructural Multi-Person Trajectory and Context Dataset [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14811016.svg)](https://doi.org/10.5281/zenodo.14811016)
 
 !["Screenshot of track visualization"](images/header.png "Screenshot of track visualization")
 
@@ -56,7 +56,7 @@ The sample package consists of four complete sequences. A demo video of one of t
 
 **Watch Sequence Overview Video:** [[click here]](https://drive.google.com/file/d/1tAPL-fh3EjeYRfe1KNB-tAkhqm6-BDWv/view?usp=drive_link)
 
-| Sample Data | [Download](https://drive.google.com/file/d/1UvcO5jPRRsbtriFRB1HlZpPtxRqjOM66/view?usp=sharing) | $${\color{green}Online}$$    | 0.3 GB   |
+| Sample Data | [Download](https://zenodo.org/records/14811016) | $${\color{green}Online}$$    | 0.3 GB   |
 |:---------:|:-------------:|:---------:|:------:|
 
 **Description:** A sequence with many pedestrians and cyclists crossing the intersection in multiple directions. Sequence duration is 121 seconds and includes 30 VRU and 72 vehicle tracks.
@@ -68,21 +68,17 @@ The sample package consists of four complete sequences. A demo video of one of t
 <a name="download"></a>
 ## Downloads
 #### Full Sequence Dataset
-The full sequenced dataset is split into five chunks of 50+ sequences each. It contains all data synchronized by reference timestamps. The data structure is explained in the chapter 'Data Structure'. The chunks can be downloaded here:
+The full sequenced dataset is split into five chunks of 50+ sequences each. It contains all data synchronized by reference timestamps. The data structure is explained in the chapter 'Data Structure'. The Dataset or Chunks can be downloaded here:
 
 | Sequences | Download Link | Status    | Size   |
 |:---------:|:-------------:|:---------:|:------:|
-| 00-49      | [[Set_01]](https://drive.google.com/file/d/1HY0PkAwEnBLZRL1_-m4tZtezJxW2Pu5Y/view?usp=sharing)           | $${\color{green}Online}$$ |  2.5 GB  |
-| 50-99     | [[Set_02]](https://drive.google.com/file/d/1Uvms0DD5SUiGKAVgz6WQZWCwCnaOdUBd/view?usp=sharing)           | $${\color{green}Online}$$ |  2.3 GB  |
-| 100-149   | [[Set_03]](https://drive.google.com/file/d/1NCZUqW2fK_KbSXm5WmqVzJTUZ0MpaTfB/view?usp=sharing)           | $${\color{green}Online}$$ |  2.7 GB  |
-| 150-199   | [[Set_04]](https://drive.google.com/file/d/1THOMJfNVc-60puyo2K1wPPZTaUzna-qL/view?usp=sharing)           | $${\color{green}Online}$$ |  3.3 GB  |
-| 200-269   | [[Set_05]](https://drive.google.com/file/d/1dji-KepI_AOYteRNAh7AzUb3XDWAUgPn/view?usp=sharing)           | $${\color{green}Online}$$ |  4.8 GB  |
+| 00-269      | [[Set_01-05]](https://zenodo.org/records/14811016)           | $${\color{green}Online}$$ |  20.0 GB  |
 
 
 #### VRU Trajectory Dataset
 The VRU trajectory data, split into train, eval, and test, can be downloaded here:
 
-| VRU Trajectory Dataset | [Download](https://drive.google.com/file/d/19co_aq7UT7lWMZjoK5si5rY_HC2MFZea/view?usp=sharing) | $${\color{green}Online}$$    | 2.7 GB   |
+| VRU Trajectory Dataset | [Download](https://zenodo.org/records/14811016) | $${\color{green}Online}$$    | 3.0 GB   |
 |:---------:|:-------------:|:---------:|:------:|
 
 ---
