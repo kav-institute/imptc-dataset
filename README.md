@@ -1,17 +1,16 @@
-### The IMPTC Dataset: An Infrastructural Multi-Person Trajectory and Context Dataset [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14811016.svg)](https://doi.org/10.5281/zenodo.14811016)
+### The IMPTC Dataset: An Infrastructural Multi-Person Trajectory and Context Dataset 
 
 !["Screenshot of track visualization"](images/header.png "Screenshot of track visualization")
 
-#### Paper:
-**_M. Hetzel, H. Reichert, G. Reitberger, K. Doll, E. Fuchs, and B. Sick "The IMPTC Dataset: An Infrastructural Multi-Person Trajectory and Context Dataset", IV 2023, Anchorage USA._**
+#### This is the official implementation for: 
 
-**Links:**
- - IEEE Explore: [[click here]](https://ieeexplore.ieee.org/document/10186776)
- - ResearchGate: [[click here]](https://www.researchgate.net/publication/372697121_The_IMPTC_Dataset_An_Infrastructural_Multi-Person_Trajectory_and_Context_Dataset)
- - ArXiv: [[click here]](https://arxiv.org/abs/2307.06165)
+_**The IMPTC Dataset: An Infrastructural Multi-Person Trajectory and Context Dataset**_
 
-#### Citation:
-If you use our dataset, please cite:
+**IV 2023 Paper:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14811016.svg)](https://doi.org/10.5281/zenodo.14811016) [![IEEE Badge](https://img.shields.io/badge/IEEE-00629B?logo=ieee&logoColor=fff&style=for-the-badge)](https://doi.org/10.1109/IV55152.2023.10186776) [![arXiv Badge](https://img.shields.io/badge/arXiv-B31B1B?logo=arxiv&logoColor=fff&style=flat)](https://arxiv.org/abs/2307.06165) [![ResearchGate Badge](https://img.shields.io/badge/ResearchGate-0CB?logo=researchgate&logoColor=fff&style=flat)](https://www.researchgate.net/publication/372697121_The_IMPTC_Dataset_An_Infrastructural_Multi-Person_Trajectory_and_Context_Dataset)
+
+_**Abstract**_ -- Inner-city intersections are among the most critical traffic areas for injury and fatal accidents. Automated vehicles struggle with the complex and hectic everyday life within those areas. Sensor-equipped smart infrastructures, which can cooperate with vehicles, can benefit automated traffic by extending the perception capabilities of drivers and vehicle perception systems. Additionally, they offer the opportunity to gather reproducible and precise data of a holistic scene understanding, including context information as a basis for training algorithms for various applications in automated traffic. Therefore, we introduce the Infrastructural Multi-Person Trajectory and Context Dataset (IMPTC). We use an intelligent public inner-city intersection in Germany with visual sensor technology. A multi-view camera and LiDAR system perceives traffic situations and road users’ behavior. Additional sensors monitor contextual information like weather, lighting, and traffic light signal status. The data acquisition system focuses on Vulnerable Road Users (VRUs) and multi-agent interaction. The resulting dataset consists of eight hours of measurement data. It contains over 2,500 VRU trajectories, including pedestrians, cyclists, e-scooter riders, strollers, and wheelchair users, and over 20,000 vehicle trajectories at different day times, weather conditions, and seasons. In addition, to enable the entire stack of research capabilities, the dataset includes all data, starting from the sensor-, calibration- and detection data until trajectory and context data. The dataset is available online for non-commercial research.
+
+#### Cite:
 ```
 @INPROCEEDINGS{10186776,
   author={Hetzel, Manuel and Reichert, Hannes and Reitberger, Günther and Fuchs, Erich and Doll, Konrad and Sick, Bernhard},
